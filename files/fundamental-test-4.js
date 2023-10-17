@@ -1,17 +1,5 @@
-const getOdds = (end) => {
-  const odds = [];
-  for (let i = 1; i <= end; i++) {
-    if (i % 2 !== 0) {
-      odds.push(i);
-    }
-  }
-
-  return odds;
-};
-
 const draw = (row) => {
   const mid = Math.ceil(row / 2); // 6
-  const oddsSpace = getOdds(row - 2); // [1, 3, 5, 7, 9]
   const objLength = row * 2 - 1; // 21
 
   for (let i = 1; i <= row; i++) {
